@@ -1,8 +1,3 @@
-  jQuery('li.title').click(function()  {
-	  jQuery(this).next('li.desc').slideToggle('slow');
-  	  jQuery(this).toggleClass('title-open','title');
-  });
-	 
 var slide_show = function(container) {	  
    	  
    var cont = container;
