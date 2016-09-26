@@ -24,7 +24,7 @@
 		 
 		 		//	 } // end if is_front_page
 		
-	        		include( get_stylesheet_directory() .  '/inc/slide.php' );
+	        		include( get_stylesheet_directory() .  '/inc/slide.php' ); 
 					
 					//
 
