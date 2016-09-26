@@ -1,0 +1,152 @@
+/* CSS Document */
+
+ #slider {
+	min-height: 75vh;
+	width: 1188px;
+	margin: 0 auto;
+	overflow: hidden;   
+	z-index: -7;
+/*	background-color: #ccc; */
+	background-color: rgba(204,204,204, 0.1);
+	} 
+	
+ #slider > ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	
+	 }	
+ #slider > ul > li {
+	display: inline-block;
+
+	}
+
+.slide {	
+   position: absolute;  
+   top: 0;
+   width: 100%;
+   height: 100%;
+   left: -100%;
+}
+
+
+.active-slide {
+	
+	left: 0;
+
+	background-color:#900;
+/*	background-color: rgba(204,204,204, 0.9); */ 
+	}
+
+.preslide {
+	
+	left: 100%;
+	top: 0;
+	background-color: #00F; 
+/*	background-color: rgba(204,204,204, 0.9); */
+}
+	 
+	 
+.slide-container {
+   position: relative;	
+   margin: 0 auto;
+   max-width: 1160px;
+}
+
+.slide-container-2 {
+   position: relative;	
+   margin: 0 auto;
+   max-width: 1160px;
+}
+#slider > .slide-container > .slide-arrows {
+	width: 45px;
+	height: 40px;
+	display: inline-block;
+	position: absolute;
+	top: 200px;
+	
+	} 
+#slider > .slide-container > .slide-arrows > .prev {
+	display: inline-block;
+	width: 45px;
+	height: 40px;
+    position: absolute;
+    background-color: #666;
+	left: -580px;
+	top:  9vh;
+	border-radius: 10%;
+}
+
+#slider > .slide-container > .slide-arrows > .prev:after {
+	display:block;
+	content: '\25C0';
+	font-size: 2rem;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	margin-top: -.3em;
+}
+#slider > .slide-container > .slide-arrows > .next {
+	display: inline-block;
+	width: 45px;
+	height: 40px;
+    position: absolute;
+	background-color: #666;
+	left: 535px;
+	top: 9vh;	
+	border-radius: 10%;
+	}
+
+#slider > .slide-container > .slide-arrows > .next:after {
+	display:block;
+	content: '\25B6';
+	font-size: 2rem;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -.3em;
+	}	
+/*
+.slide-text-area { 	
+
+    background: rgba(204,204,204, 0.1);
+	display: inline-block;
+	padding: 10px 34px 10px 20px;
+	position: absolute;
+	left: 0;
+	top: 311px;
+}
+.slide-text-area > h2, .slide-text-area > p { 
+	color: #fff;
+	text-transform: capitalize;
+}
+.slide-text-area > h2 {
+	margin: .1rem 0 0 0;
+	} 
+
+.slide-text-area > p {
+	margin: .1rem 0 0 0;
+	}	
+*/
+.slide-text-area-2 {	
+ /*   background: rgba(204,204,204, 0.1); */
+	display: inline-block;
+	padding: 10px 34px 10px 0px;
+/*	position: absolute;
+	left: 40%; */
+	top: 150px;
+	width: 100%;
+}
+.slide-text-area-2 > h2, .slide-text-area-2 > p { 
+	color: #fff;
+	text-transform: capitalize;
+}
+.slide-text-area-2 > h2 {
+	margin: .1rem 0 0 0;
+	} 
+.slide-text-area-2 > p {
+	margin: .1rem 0 0 0;
+	}	
