@@ -18,14 +18,14 @@
 			 while ( $my_query->have_posts() ) {
 				$my_query->the_post(); 
 				
-				//	if (is_front_page() ) {
+					if (is_front_page() ) {
 		 	
-						//	include_once( get_stylesheet_directory() .  '/inc/slide-home.php' );
+							include_once( get_stylesheet_directory() .  '/inc/slide-home.php' );
 		 
-		 		//	 } // end if is_front_page
-		
-	        		include( get_stylesheet_directory() .  '/inc/slide.php' ); 
-					
+		 			 } // end if is_front_page
+					else {
+	        			include( get_stylesheet_directory() .  '/inc/slide.php' ); 
+					}
 					//
 
 					if ( $sc == 0 ) {

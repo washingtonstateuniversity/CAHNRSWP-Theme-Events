@@ -40,13 +40,13 @@
 	}
 	
 .top-bar {
-	background-color: #666;
+	background-color: #333;
     height: 40px;
 	position: relative;
 	}
 
 .top-bar:before, .top-bar:after {
-	background-color: #666;
+	background-color: #333;
 /*
 	content: '';
 	background-color: #ccc;
@@ -118,14 +118,14 @@
 	}
 
 .events-nav	{
-	background-color: #666;
+	background-color: #333;
     height: 40px;
 	position: relative;
 
 	}
 
 .events-nav:before, .events-nav:after {
-	background-color: #666;
+	background-color: #333;
 	/*content: '';
 	background-color: #999;
 	position: absolute;
@@ -187,26 +187,34 @@
 .events-frontpage-content {
 	text-align:center;
 /*	display:inline-block; */
-	height: 75vh;
+	height: 65vh;
 	
 	}
 
 #events-title {
+/*
 	position: absolute;
 	top: 30%;
 	left: 50%;
 	margin-left: -135px;
-	color: #333;
+	*/
+	padding-top: 60px;
+	color: #fff;
 	
 	}	
 #events-title h1 {
-		
+	font-size: 75px;		
 }
+
+#events-title h3 {
+	font-size: 38px;	
+	}
+	
 .rsvp {
-	background-color: #ccc;
+	background-color: #999;
     border: none;
     color: white;
-    padding: 15px 62px;
+    padding: 15px 82px;
 	border-radius: 10px;
     text-align: center;
     text-decoration: none;
@@ -215,7 +223,7 @@
 	}	
 	
 .conference-footer	{
-	background-color: #666;
+	background-color: #333;
 	min-height: 60px;
 	line-height: 60px;
 	text-align: center;
@@ -225,7 +233,7 @@
 	}
 	
 .conference-footer:before, .conference-footer:after {
-	background-color: #666;	
+	background-color: #333;	
 }
 	
 	
@@ -236,5 +244,5 @@
 	
 	}	
 #events-title a {
-		color: #333;
+		color: #fff;
 }
