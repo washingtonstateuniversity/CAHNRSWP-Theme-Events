@@ -198,6 +198,10 @@
 	height: 70vh;
 	
 	}
+.events-frontpage-content:before, .events-frontpage-content:after {	
+	background: #999;
+}
+	
 
 #events-title {
 /*
@@ -205,9 +209,12 @@
 	top: 30%;
 	left: 50%;
 	margin-left: -135px;
-	*/
+	
 	padding-top: 60px;
+	*/
 	color: #fff;
+	min-height: 70vh;
+	min-width: 100%;
 	
 	}	
 #events-title h1 {

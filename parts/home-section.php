@@ -1,6 +1,6 @@
 <section class="home-section">
  
- <div class="events-frontpage-content">
+ <div class="events-frontpage-content events-bleed">
 	<?php 
 		
 		 $args = array(
