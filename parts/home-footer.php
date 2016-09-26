@@ -1,4 +1,4 @@
-<footer id="conference-footer">
+<footer class="conference-footer events-bleed">
 	<?php // echo strip_tags(wp_nav_menu( array( 'menu' => 'conference-menu', 'echo' => false, 'after' => ' | ' ) ), '<a>' ); 
 	
 	$defaults = array(
@@ -20,5 +20,6 @@
 	?>
     
     <p><a class="goslide" id="home" href="#home">HOME</a>&nbsp;|&nbsp;<a class="goslide" id="about" href="#about">ABOUT</a>&nbsp;|&nbsp;<a class="goslide" id="schedule" href="#schedule">SCHEDULE</a>&nbsp;|&nbsp;<a class="goslide" id="speakers"href="#speakers">SPEAKERS</a>&nbsp;|&nbsp;<a class="goslide" id="contact" href="#contact">CONTACT</a>&nbsp;&nbsp;</p>
-    <p><a href="http://wsu.edu">Washington State University</a></p>
-</footer>
+    <a href="http://wsu.edu/"><img src="<?php echo get_stylesheet_directory_uri();?>/images/WSU-Logo-Primary_RGB.png" width="169" height="48" alt="Washington State University" /></a>
+
+  </footer>
