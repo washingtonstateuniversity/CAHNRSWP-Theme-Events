@@ -41,7 +41,7 @@
 	
 .top-bar {
 	background-color: #333;
-    height: 40px;
+    height: 30px;
 	position: relative;
 	}
 
@@ -60,8 +60,8 @@
 	}	
 	
 .top-bar a {
-    height: 40px;
-	line-height: 40px;
+    height: 30px;
+	line-height: 30px;
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 12px;
@@ -83,8 +83,8 @@
 	position: absolute;
     top: 0;
     right: 40px;
-    height: 40px;
-    line-height: 40px;
+    height: 30px;
+    line-height: 30px;
     display: inline-block;
 	}	
 #top-links a {
