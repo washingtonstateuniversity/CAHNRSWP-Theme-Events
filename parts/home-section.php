@@ -17,15 +17,16 @@
 		  if ( $my_query->have_posts() ) { 
 			 while ( $my_query->have_posts() ) {
 				$my_query->the_post(); 
-				
+			/*
 					if (is_front_page() ) {
 		 	
-							include_once( get_stylesheet_directory() .  '/inc/slide-home.php' );
+							include( get_stylesheet_directory() .  '/inc/slide-home.php' );
 		 
 		 			 } // end if is_front_page
-					else {
-	        			include( get_stylesheet_directory() .  '/inc/slide.php' ); 
-					}
+				*/	 
+				//	 else {
+			       			include( get_stylesheet_directory() .  '/inc/slide.php' ); 
+				//	}
 					//
 
 					if ( $sc == 0 ) {

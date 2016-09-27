@@ -95,13 +95,13 @@
 .header-logo {
 	background-color: #000;
 	position: relative; 
-	height: 118px;
+	height: 128px;
 	
 	}
 .header-logo img { /* use as wordpress setting - may need to change*/
 	display: inline-block;
     margin: 0 auto;
-	
+	width: auto;
 	min-height: 100%;
 	}	
 /*	
@@ -213,8 +213,10 @@
 	padding-top: 60px;
 	*/
 	color: #fff;
-	min-height: 70vh;
+/*	min-height: 70vh; */
 	min-width: 100%;
+    position: absolute;
+    top: 25%;
 	
 	}	
 #events-title h1 {
@@ -246,7 +248,12 @@
 	position: relative;
 	
 	}
+
+.conference-footer img {
 	
+
+	vertical-align: text-top;
+	}	
 .conference-footer:before, .conference-footer:after {
 	background-color: #333;	
 }

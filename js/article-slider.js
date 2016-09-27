@@ -1,3 +1,22 @@
+
+		jQuery('.menu > ul > li > a').on('click', function (event) {
+				event.preventDefault();
+				
+				 $target = jQuery(event.target);  
+				
+				var $selectedClass = jQuery(this).parent().attr("class");
+				var selectedNum = $selectedClass.substr($selectedClass.lastIndexOf("-")+1);
+					 
+/*				 jQuery('div').find("[data-id='" + $selectedNum + "']") */
+				 jQuery("div").find("[data-id='" + selectedNum + "']").show();  
+
+				 
+				/* jQuery(this).parent().addClass('current_page_item'); */
+			
+				 
+		});
+
+
 var slide_show = function(container) {	  
    	  
    var cont = container;
