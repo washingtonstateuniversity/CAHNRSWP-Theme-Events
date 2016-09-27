@@ -52,9 +52,7 @@ var slide_show = function(container) {
 				jQuery("div").find("[data-id='" + selectedNum + "']").addClass('active');
 				
 				jQuery('.current_page_item').removeClass('current_page_item');	
-					
-/*				jQuery('#events-title').hide();		 */
-			
+							
 			    jQuery(this).parent().addClass('current_page_item'); 
 /*
 							var slug = jQuery('div').attr("id");			
