@@ -72,10 +72,33 @@ var slide_show = function(container) {
 							
 			    jQuery(this).parent().addClass('current_page_item'); 
 
-/*				resource: https://css-tricks.com/snippets/javascript/get-url-and-url-parts-in-javascript/		*/
-				var hrefArray = window.location.href.split( '#' );
-			    window.location.href = hrefArray[0] + '#' + slug;
-	
+				https://css-tricks.com/snippets/javascript/get-url-and-url-parts-in-javascript/		
+				var pathArray = window.location.pathname.split( '/' );
+				
+				var secondLevelLocation = pathArray[0];
+				
+				var newPathname = "";
+				
+				for (i = 0; i < pathArray.length; i++) {
+					newPathname += "/";
+  					newPathname += pathArray[i];
+					}
+
+				var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
+				
+				alert(newURL);
+/*				
+					
+				var currenturl = window.location.href;
+																			
+				var appendedurl = currenturl + '#' + slug;
+							
+				//alert(appendedurl);
+								
+				window.location.href = appendedurl;
+				
+	*/			
+				
 
 /*							var _href = jQuery("pageida").attr("href");
 								jQuery("pageida").attr("href",  _href + slug);

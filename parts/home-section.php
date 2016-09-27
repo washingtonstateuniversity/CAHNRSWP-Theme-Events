@@ -1,6 +1,7 @@
 <section class="home-section">
  
- <div class="events-frontpage-content events-bleed">
+ <div class="events-frontpage-content">
+	<div class="slide-wrapper">
 	<?php 
 		
 		 $args = array(
@@ -13,7 +14,7 @@
 		$count = $my_query->post_count;
 		
 		$sc = 0;
-			
+		
 		  if ( $my_query->have_posts() ) { 
 			 while ( $my_query->have_posts() ) {
 				$my_query->the_post(); 
@@ -37,10 +38,11 @@
 				} // end while
         	  } //end if have_posts
 		 wp_reset_query(); //resetting the page query	 
-	
+
 		
 
 	 
 	
 	 ?>
+     	</div> 
      </section>
