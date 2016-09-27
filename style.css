@@ -31,7 +31,7 @@
 	background-color: #333;
 	min-height: 100vh;
 	box-sizing: border-box;
-	background-image: url(images/slide_1.jpg); /* need to change this with wordpress setting  */
+/*	background-image: url(images/slide_1.jpg); */ /* need to change this with wordpress setting  */
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -163,7 +163,7 @@
 	}
 			
 .active {
-	background-color: #999;	
+	display: block;	
 }
 	
 .events-nav .menu ul {
@@ -193,8 +193,8 @@
 }	
 */
 .events-frontpage-content {
-	text-align:center;
-/*	display:inline-block; */
+/*	text-align:center; */
+	display:inline-block; 
 	height: 70vh;
 	
 	}
@@ -203,7 +203,7 @@
 }
 	
 
-#events-title {
+.events-title {
 /*
 	position: absolute;
 	top: 30%;
@@ -214,16 +214,18 @@
 	*/
 	color: #fff;
 /*	min-height: 70vh; */
-	min-width: 100%;
-    position: absolute;
+/*	min-width: 100%;
+    position: absolute; 
     top: 25%;
+	left: 0;
+*/	
 	
 	}	
-#events-title h1 {
+.events-title h1 {
 	font-size: 75px;		
 }
 
-#events-title h3 {
+.events-title h3 {
 	font-size: 38px;	
 	}
 	
@@ -260,11 +262,11 @@
 	
 	
 	
-.conference-footer a, .rsvp a, #events-title a {
+.conference-footer a, .rsvp a, .events-title a {
 	color: #fff;
 	text-transform: uppercase;
 	
 	}	
-#events-title a {
+.events-title a {
 		color: #fff;
 }

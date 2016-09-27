@@ -17,23 +17,19 @@
 		  if ( $my_query->have_posts() ) { 
 			 while ( $my_query->have_posts() ) {
 				$my_query->the_post(); 
-			/*
-					if (is_front_page() ) {
+	
+			
+//					if (is_front_page() ) {
+					if ($sc == 0) {
 		 	
-							include( get_stylesheet_directory() .  '/inc/slide-home.php' );
+							include_once( get_stylesheet_directory() .  '/inc/slide-home.php' );
 		 
 		 			 } // end if is_front_page
-				*/	 
-				//	 else {
+					 
+					 else {
 			       			include( get_stylesheet_directory() .  '/inc/slide.php' ); 
-				//	}
+					}
 					//
-
-					if ( $sc == 0 ) {
-						//	echo '<div class="slide active-slide" id="' . strtolower($my_query->post->post_title) . '" style="display: block;" data-id="' . $my_query->post->ID . '">';
-						}
-		
-		
 					
 					$sc++;
 					

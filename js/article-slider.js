@@ -1,20 +1,4 @@
 
-		jQuery('.menu > ul > li > a').on('click', function (event) {
-				event.preventDefault();
-				
-				 $target = jQuery(event.target);  
-				
-				var $selectedClass = jQuery(this).parent().attr("class");
-				var selectedNum = $selectedClass.substr($selectedClass.lastIndexOf("-")+1);
-					 
-/*				 jQuery('div').find("[data-id='" + $selectedNum + "']") */
-				 jQuery("div").find("[data-id='" + selectedNum + "']").show();  
-
-				 
-				/* jQuery(this).parent().addClass('current_page_item'); */
-			
-				 
-		});
 
 
 var slide_show = function(container) {	  
@@ -46,6 +30,41 @@ var slide_show = function(container) {
 				});
 
 	});
+	
+	
+		jQuery('.menu > ul > li > a').on('click', function (event) {
+				event.preventDefault();
+				
+				 $target = jQuery(event.target);  
+				
+				
+				var $selectedClass = jQuery(this).parent().attr("class");
+				var selectedNum = $selectedClass.substr($selectedClass.lastIndexOf("-")+1);
+/*				var pageida = '.page-item-id-' + selectNum + ' > a';	*/
+				 
+
+				 
+/*				 jQuery('div').find("[data-id='" + $selectedNum + "']") */
+				jQuery('.active').removeClass('active');
+				
+/*				jQuery('#events-title').removeClass('active'); */
+				
+				jQuery("div").find("[data-id='" + selectedNum + "']").addClass('active');
+				
+				jQuery('.current_page_item').removeClass('current_page_item');	
+					
+/*				jQuery('#events-title').hide();		 */
+			
+			    jQuery(this).parent().addClass('current_page_item'); 
+/*
+							var slug = jQuery('div').attr("id");			
+							var _href = jQuery("pageida").attr("href");
+								jQuery("pageida").attr("href",  _href + slug);
+*/	
+				/* jQuery(this).parent().addClass('current_page_item'); */
+			
+				 
+		});
 		
 		jQuery('.goslide').on('click', function (event) {
 				 $target = jQuery(event.target);  

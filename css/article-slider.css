@@ -9,20 +9,28 @@
 /*	background-color: #ccc; */
 	background-color: rgba(204,204,204, 0.1);
 	} 
+	
 article {
 	position: relative;
-
+	width: 1188px;
 	}
 	
 
 .slide {	
-  position: absolute;   
-   left: 0;
-   top: 250px;
+  position: absolute;
+
+  top:100px; 
+  min-width:100%;
   
+ /*  left: 0;
+   top: 250px;
    width: 100%;
    height: 100%;
+   */
+   display: none;
 /*   left: -100%; */
+
+
 }
 
 
