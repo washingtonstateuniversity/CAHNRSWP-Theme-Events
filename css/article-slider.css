@@ -15,12 +15,17 @@ article {
 	width: 1188px;
 	}
 	
+.active {
+	display: block;	
+	left:0;
+}
 
 .slide {	
   position: absolute;
 
   top:100px; 
   min-width:100%;
+  left: -100%;
   
  /*  left: 0;
    top: 250px;
