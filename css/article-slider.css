@@ -5,7 +5,7 @@
 	width: 1188px;
 	margin: 0 auto;
 	overflow: hidden;   
-	z-index: -7;
+	
 /*	background-color: #ccc; */
 	background-color: rgba(204,204,204, 0.1);
 	} 
@@ -15,43 +15,27 @@ article {
 	width: 1188px;
 	}
 	
-.active {
-	display: block;	
-	left:0;
-}
-
 .slide {	
   position: absolute;
-
   top:100px; 
   min-width:100%;
-  left: -100%;
-  
+  display: none;
  /*  left: 0;
-   top: 250px;
-   width: 100%;
    height: 100%;
    */
-   display: none;
-/*   left: -100%; */
-
-
 }
 
+.active {
+	display: block;	
+	}
 
 .active-slide {
 	
-	left: 0;
-
-	background-color:#900;
 /*	background-color: rgba(204,204,204, 0.9); */ 
 	}
 
 .preslide {
 	
-	left: 100%;
-	top: 0;
-	background-color: #00F; 
 /*	background-color: rgba(204,204,204, 0.9); */
 }
 	 

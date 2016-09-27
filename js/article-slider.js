@@ -45,11 +45,11 @@ var slide_show = function(container) {
 
 				 
 /*				 jQuery('div').find("[data-id='" + $selectedNum + "']") */
-				jQuery('.active').removeClass('active');
+				jQuery('.active').removeClass('active'); 
 				
 /*				jQuery('#events-title').removeClass('active'); */
 				
-				jQuery("div").find("[data-id='" + selectedNum + "']").animate({"left":"0"}).addClass('active');
+				jQuery("div").find("[data-id='" + selectedNum + "']").addClass('active');
 				
 				jQuery('.current_page_item').removeClass('current_page_item');	
 							

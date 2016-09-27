@@ -1,13 +1,6 @@
-<?php 
-		echo '<article>';
-	
-//		echo '<div class="slide" id="' . $my_query->post->post_name .   '" data-id="' . $my_query->post->ID . '" style="display: none;">';					
-		echo '<div class="slide" id="' . $my_query->post->post_name .   '" data-id="' . $my_query->post->ID . '">';					
-		echo '<h2>';
-		the_title();
-		echo '</h2><p>';
-		the_content();
-		echo '</p>';
-		echo '</div>';
-		echo '</article>';
-		
+		<article>
+		<div class="slide" id="<?php echo $my_query->post->post_name ?>" data-id="<?php echo $my_query->post->ID ?>">				
+		<h2><?php the_title(); ?></h2>
+        <p><?php the_content(); ?> </p>
+		</div>
+		</article>

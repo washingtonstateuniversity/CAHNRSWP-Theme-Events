@@ -31,11 +31,13 @@
 	background-color: #333;
 	min-height: 100vh;
 	box-sizing: border-box;
-/*	background-image: url(images/slide_1.jpg); */ /* need to change this with wordpress setting  */
+	background-image: url(images/slide_1.jpg); /* need to change this with wordpress setting  */
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	text-align: center;	
+	z-index: -7;
+	
 	
 	}
 	
