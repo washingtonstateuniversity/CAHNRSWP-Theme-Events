@@ -210,7 +210,10 @@
 	padding-top: 60px;
 	*/
 	color: #fff;
-	background-color:rgba(0, 51, 153, 0.5);
+	background-color:rgba(0, 51, 153, 0.2);
+
+	padding: 10px 0;
+	
 /*	min-height: 70vh; */
 /*	min-width: 100%;
     position: absolute; 
@@ -218,10 +221,13 @@
 	left: 0;
 */	
 	
-	}	
+	}
+.home-content{
+	
+	}		
 	
 .events-title:before, .events-title:after {	
-	background-color: rgba(0, 51, 153, 0.5);
+	background-color: rgba(0, 51, 153, 0.2);
 }	
 .events-title h1 {
 	font-size: 75px;		
