@@ -15,7 +15,8 @@
 	position: absolute;
 	top: 0;
 	right: 100%;
-	width: 9999rem;
+/*	width: 9999rem; */
+	width: 100%;
 	height: 100%;
 	display: block;
 	}		
@@ -28,17 +29,15 @@
 
 /* ------------------*/
 #jacket {
-	background-color: #333;
-	min-height: 100vh;
+/*	background-color: #333; */
+	min-height: 100vh; 
 	box-sizing: border-box;
 	background-image: url(images/slide_1.jpg); /* need to change this with wordpress setting  */
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: cover;
+	background-size: cover; 
 	text-align: center;	
-	z-index: -7;
-	
-	
+
 	}
 	
 .top-bar {
@@ -49,16 +48,6 @@
 
 .top-bar:before, .top-bar:after {
 	background-color: #333;
-/*
-	content: '';
-	background-color: #ccc;
-	position: absolute;
-	top: 0;
-	right: 100%;
-	width: 9999rem;
-	height: 100%;
-	display: block;
-*/	
 	}	
 	
 .top-bar a {
@@ -70,18 +59,12 @@
 	}		
 
 #org-title 	{
-/*	margin: 0 0 0 200px; */
-	
 	position: absolute;
     top: 0;
     left: 225px;
 	display: inline-block;
 	}
 #top-links {	
-
-/*	margin: 0 10px 0 0;
-	display: inline-block;
-	float: right; */
 	position: absolute;
     top: 0;
     right: 40px;
@@ -106,18 +89,6 @@
 	width: auto;
 	min-height: 100%;
 	}	
-/*	
-.header-logo:before, .header-logo:after {
-	content: '';
-	background-color: #000;
-	position: absolute;
-	top: 0;
-	right: 100%;
-	width: 9999rem;
-	height: 100%;
-	display: block;
-}
-*/
 
 .header-logo:before, .header-logo:after {
 	background-color: #000;
@@ -132,20 +103,6 @@
 
 .events-nav:before, .events-nav:after {
 	background-color: #333;
-	/*content: '';
-	background-color: #999;
-	position: absolute;
-	top: 0;
-	right: 100%;
-	width: 9999rem;
-	height: 100%;
-	display: block;
-	}		
-	
-.events-nav:after {
-	left: 100%;
-	right: auto;	
-	}*/
 	}			
 
 .events-nav a {
@@ -182,25 +139,20 @@
 
 .home-section {
 	color: #fff;
-/*	border: solid 1px #fff; */
-	
+	min-height: 80vh;
+
 	}
-/*	
-.events-frontpage-content:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 25%;
-}	
-*/
+
 .events-frontpage-content {
 /*	text-align:center; */
-	display:inline-block; 
-	height: 70vh;
 	
 	}
 
 .events-title {
+	color: #fff;
+	background-color:rgba(0, 51, 153, 0.2);
+	padding: 10px 0;
+
 /*
 	position: absolute;
 	top: 30%;
@@ -209,10 +161,6 @@
 	
 	padding-top: 60px;
 	*/
-	color: #fff;
-	background-color:rgba(0, 51, 153, 0.2);
-
-	padding: 10px 0;
 	
 /*	min-height: 70vh; */
 /*	min-width: 100%;
@@ -220,15 +168,12 @@
     top: 25%;
 	left: 0;
 */	
-	
-	}
-.home-content{
-	
-	}		
+}
 	
 .events-title:before, .events-title:after {	
 	background-color: rgba(0, 51, 153, 0.2);
-}	
+}
+	
 .events-title h1 {
 	font-size: 75px;		
 }
@@ -236,6 +181,10 @@
 .events-title h3 {
 	font-size: 38px;	
 	}
+
+.events-title a {
+		color: #fff;
+}
 	
 .rsvp {
 	background-color: #999;
@@ -248,22 +197,23 @@
     display: inline-block;
     font-size: 16px;
 	}	
-	
+footer {
+	position: relative;
+	}	
+
 .conference-footer	{
 	background-color: #333;
 	min-height: 60px;
 	line-height: 60px;
 	text-align: center;
 	color: #fff;
-	position: relative;
-	
 	}
 
 .conference-footer img {
-	
 
 	vertical-align: text-top;
 	}	
+	
 .conference-footer:before, .conference-footer:after {
 	background-color: #333;	
 }
@@ -275,6 +225,3 @@
 	text-transform: uppercase;
 	
 	}	
-.events-title a {
-		color: #fff;
-}

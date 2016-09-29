@@ -1,7 +1,110 @@
 
 jQuery('.menu > ul > li > a').on('click', function (event) {
 		event.preventDefault();
-				
+		
+		var clicked_nav = jQuery(this).parent();
+		
+		var active_nav = jQuery('.current_page_item');
+		
+		var active_slide = jQuery('.slide.active').first();
+
+		var next_slide = return_next_slide ( clicked_nav );
+		
+		var direction = (clicked_nav.index() < active_nav.index()) ? -1 : 1;
+
+		update_nav ( active_nav, clicked_nav );
+		
+		do_slide ( active_slide, next_slide, direction );
+		
+		do_update_slug( next_slide );
+
+//		alert(direction);	
+//		console.log(next_slide);
+
+	
+		
+});
+
+function do_update_slug( next_slide ){
+	
+	var slug = next_slide.attr("id");
+	var hrefArray = window.location.href.split( '#' );
+    window.location.href = hrefArray[0] + '#' + slug;
+	
+	};
+	
+function windowoffset (winwidth, hswidth) {
+								
+	return (winwidth - hswidth);
+					
+} //end  windowoffset 
+
+
+function do_slide( active_slide, next_slide, direction ){
+
+	active_slide.removeAttr( 'style' );
+	active_slide.removeClass('active');
+	
+	next_slide.addClass('active'); 
+
+	var winwidth = jQuery( window ).width();			
+	var hswidth = jQuery('.home-section').width();
+	
+	var ws = windowoffset(winwidth, hswidth );		
+	
+	var start_offset = -(0.5 * ws);
+	var start_position = '';
+	
+	var start_position_num = start_offset + hswidth;
+		
+		start_position = start_position_num + "px"
+	 
+//	 alert(start_position);
+
+//	alert(direction);
+	 
+	if (direction === 1) {
+		start_position = "-" + start_position;
+//		next_slide.css({"left":"-100%"});
+		next_slide.css({"left":start_position});
+		next_slide.animate({"left":"0"}, 4000);
+		
+		
+		}
+	else
+	{
+
+//		next_slide.css({"left":"100%"});
+		next_slide.css({"left":start_position});
+		next_slide.animate({"left":"0"}, 4000);	
+		}
+	
+	
+	
+	}; //end do_slide
+
+function update_nav ( active_nav, clicked_nav ) {
+	
+	active_nav.removeClass('current_page_item');
+	clicked_nav.addClass('current_page_item');
+	
+	
+	};
+
+function return_next_slide ( clicked  ) {
+	
+		var selectedClass = clicked.attr("class");
+		var selectedNum = selectedClass.substr(selectedClass.lastIndexOf("-")+1);
+		
+		var n_slide = jQuery('div[data-id="' + selectedNum + '"]');
+		
+		return n_slide;
+	
+	};
+
+
+
+/*				
 		var selectedClass = jQuery(this).parent().attr("class");
 		var selectedNum = selectedClass.substr(selectedClass.lastIndexOf("-")+1);
 			
@@ -97,8 +200,8 @@ jQuery('.menu > ul > li > a').on('click', function (event) {
 			 
 		});
  	
-
-
+*/
+/*
 var slide_show = function(container) {	  
    	  
    var cont = container;
@@ -109,6 +212,9 @@ var slide_show = function(container) {
   
     self.do_slide = function() {
 			
+		 
+		 
+		 
 		 
 	 }
    
@@ -125,5 +231,5 @@ var slide_show = function(container) {
    this.init();
    
 } //slide_show
-
-var slideshow1 = new slide_show(jQuery ('#slider'));
+*/
+// var slideshow1 = new slide_show(jQuery ('#slider'));
