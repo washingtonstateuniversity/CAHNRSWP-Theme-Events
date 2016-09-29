@@ -1,0 +1,63 @@
+jQuery('.menu > ul > li > a').on('click', function (event) {
+		event.preventDefault();
+				
+				
+		var $selectedClass = jQuery(this).parent().attr("class");
+		var selectedNum = $selectedClass.substr($selectedClass.lastIndexOf("-")+1);
+
+/*				var pageida = '.page-item-id-' + selectNum + ' > a';	*/
+				 
+				// Create slide wrapper - class="slide-wrapper" - Done 9/27/2016 - 3:03pm
+				// set var to slide wrapper 
+				
+//			var slidewrapper = jQuery('.slide-wrapper'); Doesn't work - look later
+				
+				// use find to get individual slides or remove classes
+				
+			//	slidewrapper.jQuery('.active').removeClass('active');	Doesn't work - Look later
+				 
+				//var slides = jQuery('.slide');
+/*				 jQuery('div').find("[data-id='" + $selectedNum + "']") */
+				
+				jQuery('.slide.active').removeClass('active'); 				
+				
+				//slides.removeClass('active');
+				
+/*				jQuery('#events-title').removeClass('active'); */
+
+				var slide = jQuery("div").find("[data-id='" + selectedNum + "']");
+				
+				slide.addClass('active');  
+				
+				var slug = slide.attr("id");	
+				
+/*				resource: https://css-tricks.com/snippets/javascript/get-url-and-url-parts-in-javascript/		*/				
+				var hrefArray = window.location.href.split( '#' );
+			    window.location.href = hrefArray[0] + '#' + slug;
+				
+								
+   				jQuery('.current_page_item').removeClass('current_page_item');		
+			    jQuery(this).parent().addClass('current_page_item'); 					
+				
+//				jQuery(this).parent().next().addClass('nextslide');
+//				jQuery(this).parent().prev().addClass('prevslide');
+
+/*				
+
+
+				jQuery('.nextslide').removeClass('nextslide');	
+				jQuery('.prevslide').removeClass('prevslide');	
+				
+				var mitems = jQuery(this).parent();
+				
+				var nextslide = mitems.next();
+	 			var prevslide = mitems.prev();
+				
+				nextslide.addClass('nextslide');
+				prevslide.addClass('prevslide');
+*/				
+
+
+	
+				 
+		});

@@ -1,0 +1,105 @@
+
+.hamburger {
+ display: none;	
+}
+
+.hamburger {
+    position: relative;
+    display: inline-block;
+    width: 1.25em;
+    height: 0.8em;
+    margin-right: 0.3em;
+    border-top: 0.2em solid #fff;
+    border-bottom: 0.2em solid #fff;
+}
+
+   .hamburger:before {
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid #fff;
+}
+
+
+/**** End of Nav section ****/
+
+main {
+	max-width: 1200px; 
+
+    margin: 0 0 0 300px; 
+	
+    background: #fff;
+	display: block;
+ }
+ 
+.home {
+	max-width: 1200px;   
+    margin: 0 auto;
+ 
+ }
+
+.home-main {
+	max-width: 1200px;    
+ 
+    background: #fff;
+	display: block;
+ }
+
+@media screen and (max-width: 1200px) {
+/*    header{
+        padding: 0 .15rem;
+    } */
+	#home-gallery article {
+	  width: 33%;	
+	}
+	
+}
+
+@media screen and (max-width: 900px) {
+
+	
+	.primary-nav {
+
+	 width: 200px;
+	 font-size: 91%;
+	 
+	}
+	main {
+      margin: 0 0 0 200px;
+	}
+	#home-gallery article {
+	width: 50%;	
+	
+	}
+	.primary-nav li a {
+      padding: 0 .2rem 0 .5rem;
+	}
+	.primary-nav .menu {
+	  padding-left: 25px;
+    }
+    #home-gallery .content-wrap {
+		 font-size: 65%; 
+		}
+
+    #home-gallery article .summary {
+		
+	}
+	
+   .dropdown-toggle {
+	display: none;  
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+    main {
+		   margin: 0;
+   	}
+	.table-cell-right {
+		display:none;
+		}
+	#header-logo {
+	 display: none;	
+	}
