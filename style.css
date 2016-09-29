@@ -30,7 +30,7 @@
 /* ------------------*/
 #jacket {
 /*	background-color: #333; */
-	min-height: 100vh; 
+/*	min-height: 100vh;   */
 	box-sizing: border-box;
 	background-image: url(images/slide_1.jpg); /* need to change this with wordpress setting  */
 	background-repeat: no-repeat;
@@ -139,7 +139,7 @@
 
 .home-section {
 	color: #fff;
-	min-height: 80vh;
+ 	min-height: 100vh; 
 
 	}
 

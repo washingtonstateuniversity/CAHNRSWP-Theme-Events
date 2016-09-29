@@ -7,16 +7,20 @@ article {
   
 	}	
 .slide {	
-  position: absolute;
-  top:50px; 
+  position: absolute; 
+  top: 30px;
+  left: 0px;
+  bottom: 20px;
   min-width:100%;
   display: none;
+  background-color:rgba(0, 51, 153, 0.1);
+  padding: 10px 0;
  
 }
 
 .active {
 	display: block;	
-
+	position: relative;
 	}
 
 /*

@@ -17,11 +17,13 @@ jQuery('.menu > ul > li > a').on('click', function (event) {
 		do_slide ( active_slide, next_slide, direction );
 		
 		do_update_slug( next_slide );
+		
+		return false;
 
 //		alert(direction);	
-//		console.log(next_slide);
+		console.log(next_slide);
 
-	
+		
 		
 });
 
@@ -59,13 +61,16 @@ function do_slide( active_slide, next_slide, direction ){
 		
 		start_position = start_position_num + "px"
 	 
-//	 alert(start_position);
+	// alert(start_position);
 
 //	alert(direction);
-	 
+    
+	
+	
 	if (direction === 1) {
 		start_position = "-" + start_position;
 //		next_slide.css({"left":"-100%"});
+		
 		next_slide.css({"left":start_position});
 		next_slide.animate({"left":"0"}, 4000);
 		
