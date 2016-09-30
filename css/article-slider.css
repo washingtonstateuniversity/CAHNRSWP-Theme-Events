@@ -1,19 +1,18 @@
 /* CSS Document */
 
 article {
-	
+		
 	}
 .slide-wrapper {
 	position: relative;
-	
- /* 	min-height: 100vh;  */
+  	  
 /*	background-color: #fff; */
 	}
 .slide {	
   position: absolute; 
  /* top: 50%;
   left: 50%; */
-  bottom: 0px;
+  
   
   display: none;
   background-color:#fff; 

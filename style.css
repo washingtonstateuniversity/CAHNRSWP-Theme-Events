@@ -31,29 +31,15 @@
 /* ------------------*/
 #jacket {
 /*	background-color: #333; */
-	min-height: 100vh;   
+/*	min-height: 100vh;    */
 	box-sizing: border-box;
-	background-image: url(images/slide_1.jpg); /* need to change this with wordpress setting  */
+/*	background-image: url(images/slide_1.jpg); */ /* need to change this with wordpress setting  */
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover; 
 	text-align: center;	
 	}
-/*
-#jacket, #binder {
-	height: 100%;
-}
 
-.page-wrap {
-	min-height: 100%;
-	margin-bottom: -89px;
-	}	
-.page-wrap:after {
-	content: "";
-	display: block;
-	
-	}	
-*/	
 .top-bar {
 	background-color: #333;
     height: 30px;
@@ -153,7 +139,9 @@
 
 .home-section {
 	color: #fff;
-/* 	min-height: 100vh;  */
+	background-color: #fff;
+	
+/*	z-index: 1;  stopped here */ 
 
 	}
 
@@ -165,7 +153,7 @@
 .events-title {
 	color: #fff;
 	background-color:rgba(0, 51, 153, 0.2);
-	padding: 10px 0;
+
 
 /*
 	position: absolute;
@@ -213,26 +201,34 @@
 	}
 	
 
-
-footer {
+.page-wrap {
+ 	height: 100vh;
 	position: relative;
-/*	margin-top: -90px; */
-	height: 90px;
-	line-height: 90px;
+	}
+footer {
+	
 	}	
 
 .conference-footer	{
-	
+	position: absolute;
+	right: 0;
+  	bottom: 0;
+	left: 0;
+		
+	height: 90px;
+	line-height: 90px;
+
 	background-color: #333;
 /*	min-height: 60px;
 	line-height: 60px;
 	*/
 	text-align: center;
 	color: #fff;
+	
 	}
 
 .conference-footer img {
-position: absolute;
+	position: absolute;
 	top:50%;
 	left: 50%;
 	margin-top: -24px;
