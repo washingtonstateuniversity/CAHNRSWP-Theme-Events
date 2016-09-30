@@ -52,19 +52,22 @@ function do_slide( active_slide, next_slide, direction ){
 	var winwidth = jQuery( window ).width();			
 	var hswidth = jQuery('.home-section').width();
 	
+//	alert(winwidth);	
 	var ws = windowoffset(winwidth, hswidth );		
 	
-	var start_offset = -(0.5 * ws);
+	var start_offset = (0.5 * ws);
 	var start_position = '';
 	
+//	alert(start_offset);
+		
 	var start_position_num = start_offset + hswidth;
 		
 		start_position = start_position_num + "px"
-	 
+
 	// alert(start_position);
 
-//	alert(direction);
-//    jQuery( window ).scrollTop( '0' );
+	//	alert(direction);
+
 	
 	
 	if (direction === 1) {
@@ -74,7 +77,7 @@ function do_slide( active_slide, next_slide, direction ){
 		next_slide.css({"left":start_position});
 		next_slide.animate({"left":"0"}, 4000, function() {
 				do_update_slug( next_slide );
-				jQuery( document.body).scrollTop( 0 );
+			//	jQuery( document.body).scrollTop( 0 );
 			});		
 		}
 	else
@@ -84,7 +87,7 @@ function do_slide( active_slide, next_slide, direction ){
 		next_slide.css({"left":start_position});
 		next_slide.animate({"left":"0"}, 4000, function() {
 				do_update_slug( next_slide );
-				jQuery( document.body).scrollTop( 0 );
+		//		jQuery( document.body).scrollTop( 0 );
 			});		
 		
 		}
