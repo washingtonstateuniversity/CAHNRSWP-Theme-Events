@@ -77,7 +77,7 @@ function do_slide( active_slide, next_slide, direction ){
 		next_slide.css({"left":start_position});
 		next_slide.animate({"left":"0"}, 4000, function() {
 				do_update_slug( next_slide );
-			//	jQuery( document.body).scrollTop( 0 );
+				jQuery( document.body).scrollTop( 0 );
 			});		
 		}
 	else
@@ -87,7 +87,7 @@ function do_slide( active_slide, next_slide, direction ){
 		next_slide.css({"left":start_position});
 		next_slide.animate({"left":"0"}, 4000, function() {
 				do_update_slug( next_slide );
-		//		jQuery( document.body).scrollTop( 0 );
+				jQuery( document.body).scrollTop( 0 );
 			});		
 		
 		}

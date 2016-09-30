@@ -10,15 +10,18 @@ article {
 	}
 .slide {	
   position: absolute; 
-  padding: 30px 0 90px 0; 
-  margin-top: 20px;
-  
-/*  padding-bottom: 90px; */
-  
+  padding: 30px 0 120px 0; 
   display: none;
-  background-color:#fff; 
+/*  background-color:#fff; */
+/*  background-image: url(../images/slide_1.jpg);	 */
 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  
   color: #333;
+/*  margin-top: 20px; */ 
+/*  padding-bottom: 90px; */
 
 }
 
@@ -29,6 +32,7 @@ article {
 .active {
 	display: block;	
 	position: relative;
+	
 	}
 
 /*
