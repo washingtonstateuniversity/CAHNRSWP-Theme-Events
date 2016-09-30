@@ -15,13 +15,13 @@ jQuery('.menu > ul > li > a').on('click', function (event) {
 		update_nav ( active_nav, clicked_nav );
 		
 		do_slide ( active_slide, next_slide, direction );
+				
+//		do_update_slug( next_slide );
 		
-		do_update_slug( next_slide );
 		
-		return false;
 
 //		alert(direction);	
-		console.log(next_slide);
+//		console.log(next_slide);
 
 		
 		
@@ -64,7 +64,7 @@ function do_slide( active_slide, next_slide, direction ){
 	// alert(start_position);
 
 //	alert(direction);
-    
+//    jQuery( window ).scrollTop( '0' );
 	
 	
 	if (direction === 1) {
@@ -72,18 +72,23 @@ function do_slide( active_slide, next_slide, direction ){
 //		next_slide.css({"left":"-100%"});
 		
 		next_slide.css({"left":start_position});
-		next_slide.animate({"left":"0"}, 4000);
-		
-		
+		next_slide.animate({"left":"0"}, 4000, function() {
+				do_update_slug( next_slide );
+				jQuery( document.body).scrollTop( 0 );
+			});		
 		}
 	else
 	{
 
 //		next_slide.css({"left":"100%"});
 		next_slide.css({"left":start_position});
-		next_slide.animate({"left":"0"}, 4000);	
+		next_slide.animate({"left":"0"}, 4000, function() {
+				do_update_slug( next_slide );
+				jQuery( document.body).scrollTop( 0 );
+			});		
+		
 		}
-	
+		
 	
 	
 	}; //end do_slide
