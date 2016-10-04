@@ -1,5 +1,5 @@
 <article>
-	<div class="slide active events-bleed" id="<?php echo $my_query->post->post_name ?>" data-id="<?php echo $my_query->post->ID ?>">
+	<div class="slide active events-bleed" id="<?php echo $my_query->post->post_name ?>" data-id="<?php echo $my_query->post->ID ?>" style="left: 0px;">
         <div class="events-title">	
             <h1>  <?php	bloginfo('title'); ?></h1>
             <h3> Event Date Here</h3><p />

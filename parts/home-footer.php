@@ -19,7 +19,7 @@
 	
 	?>
     
-    <a href="http://wsu.edu/"><img src="<?php echo get_stylesheet_directory_uri();?>/images/WSU-Logo-Primary_RGB_t.png" width="169" height="48" alt="Washington State University" /></a>
+    <a href="http://wsu.edu/"><img src="<?php echo get_stylesheet_directory_uri();?>/images/WSU-Logo-Primary_RGB_t2.png" alt="Washington State University" /></a>
  <!--//   <p><a class="goslide" id="home" href="#home">HOME</a>&nbsp;|&nbsp;<a class="goslide" id="about" href="#about">ABOUT</a>&nbsp;|&nbsp;<a class="goslide" id="schedule" href="#schedule">SCHEDULE</a>&nbsp;|&nbsp;<a class="goslide" id="speakers"href="#speakers">SPEAKERS</a>&nbsp;|&nbsp;<a class="goslide" id="contact" href="#contact">CONTACT</a>&nbsp;&nbsp;</p>  //-->
 <p></p>
   </footer>

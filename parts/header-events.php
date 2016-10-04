@@ -8,6 +8,7 @@
     	<a href="#">
         	<img src="<?php echo get_stylesheet_directory_uri();?>/images/events-logo.jpg" /></a>
     </div>
+    <div class="mobile-title-bar"><div id="org-title"><a href="#">college of agricultural, human, and natural resources</a></div></div>
     <nav class="events-nav events-bleed"> 
     <?php
     wp_nav_menu( array( 'theme_location' => 'conference-menu', 'container_class' => 'events-nav', 'sort_column' => 'menu_order' ) ); 

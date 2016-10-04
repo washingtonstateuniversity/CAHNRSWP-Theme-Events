@@ -44,10 +44,9 @@ function windowoffset (winwidth, hswidth) {
 
 function do_slide( active_slide, next_slide, direction ){
 
-	active_slide.removeAttr( 'style' );
-	active_slide.removeClass('active');
-	
-	next_slide.addClass('active'); 
+//	active_slide.removeAttr( 'style' );
+//	active_slide.removeClass('active');
+//	next_slide.addClass('active'); 
 
 	var winwidth = jQuery( window ).width();			
 	var hswidth = jQuery('.home-section').width();
@@ -63,29 +62,62 @@ function do_slide( active_slide, next_slide, direction ){
 	var start_position_num = start_offset + hswidth;
 		
 		start_position = start_position_num + "px"
+ 
 
 	// alert(start_position);
 
 	//	alert(direction);
-
-	
-	
+/*
+		active_slide.animate({"left": "100%"}, 4000);
+		active_slide.removeClass('active');	
+		active_slide.removeAttr( 'style' );		
+		next_slide.addClass('active'); 	
+*/	
 	if (direction === 1) {
-		start_position = "-" + start_position;
+
+	var	active_end_position = winwidth + "px";
+	var	next_start_position = "-" + start_position;
 //		next_slide.css({"left":"-100%"});
 		
-		next_slide.css({"left":start_position});
+		active_slide.css({"left":"0"});
+		
+		active_slide.animate({"left":active_end_position}, 4000, function() {
+			active_slide.delay("4500");
+		    active_slide.removeAttr( 'style' );
+			active_slide.removeClass('active');	
+			});
+
+		next_slide.addClass('active');				
+
+		
+		next_slide.css({"left":next_start_position});
+		
 		next_slide.animate({"left":"0"}, 4000, function() {
+				next_slide.css({"position":"relative"});
 				do_update_slug( next_slide );
 				jQuery( document.body).scrollTop( 0 );
 			});		
 		}
 	else
 	{
+		active_end_position =  "-" + winwidth + "px"; 
+		next_start_position =  start_position;
+		
+		active_slide.animate({"left":active_end_position}, 4000, function() {
+			active_slide.delay("4500");
+			active_slide.removeClass('active');	
+			active_slide.removeAttr( 'style' );		
+					
+			});
+		
+		next_slide.addClass('active'); 						
 
 //		next_slide.css({"left":"100%"});
-		next_slide.css({"left":start_position});
+		next_slide.css({"left":next_start_position});
+		
 		next_slide.animate({"left":"0"}, 4000, function() {
+			
+				next_slide.css({"position":"relative"});
 				do_update_slug( next_slide );
 				jQuery( document.body).scrollTop( 0 );
 			});		

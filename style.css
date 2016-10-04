@@ -25,11 +25,121 @@
 	right: auto;	
 
 	}	
+	
+/******* responsize elements **************/
+.mobile-title-bar {
+	max-height: 30px;
+	background-color: #666;
+	position:relative;
+	display:none;
+	}
+
+@media screen and (max-width: 1188px) {
+	max-width: 1188px;    
+    background: #fff;
+	display: block;
+	header {
+		
+		}
+	
+}
+@media screen and (max-width: 989px) {
+
+	header {
+		max-height: 50%;
+        font-size: 91%;
+		}
+	header > .events-nav > .menu > ul {
+	     margin:0 0 0 2rem;
+		}
+	
+	.top-bar {
+		margin-top: 49px;
+		
+		
+		}	
+	.top-bar #org-title {
+		display: absolute;
+		left: 2rem;
+		}
+			
+	.top-bar #top-links {
+		display: none;
+	}	
+	
+	.slide {
+		 padding: 0px 0 90px 0; 
+		}
+		
+/*
+	.events-title, .events-title h1, .events-title h3 {
+		font-size: 91%;
+		padding: 0 10px;
+		}	
+*/	
+	
+}
+
+
+@media screen and (max-width: 700px) {
+
+.events-nav {
+	 display: none;	
+	}
+.top-bar {
+		display: none;	
+		
+		}	
+.header-logo {
+	margin-top: 30px;
+	}		
+.mobile-title-bar { 
+	display: block;
+	background-color: #333;
+    height: 30px;
+    
+}		
+
+.mobile-title-bar #org-title {
+	line-height: 30px;
+	margin: 0 auto;
+	left: 0;
+	position: relative;
+	
+		
+		}
+.mobile-title-bar #org-title a {		
+	color: #fff;
+	text-transform:	uppercase;
+}
+
+.events-title h1 { 
+	font-size: 50%;
+}
+
+.slide {
+    padding: 0px 0 45px 0; 
+		}
+		
+.conference-footer {
+	max-height: 45px;
+	line-height: 45px;
+	
+	
+	}
+.conference-footer img {
+
+	width: 127.75px; 
+	
+
+	}
+
+} /* end 700px and smaller
 
 
 /* ------------------*/
 #jacket {
- /*   background-color: #fff;  */
+ /*  background-color: #fff;  */
 /*	min-height: 100vh;    */
 	box-sizing: border-box;
 /*	background-image: url(images/slide_1.jpg); */  /* need to change this with wordpress setting  */
@@ -79,14 +189,14 @@
 .header-logo {
 	background-color: #000;
 	position: relative; 
-	height: 128px;
+	min-height: 128px; 
 	
 	}
 .header-logo img { /* use as wordpress setting - may need to change*/
-	display: inline-block;
+/*	display: inline-block; */
     margin: 0 auto;
 	width: auto;
-	min-height: 100%;
+	min-height: 100%; 
 	}	
 
 .header-logo:before, .header-logo:after {
@@ -138,7 +248,7 @@
 
 .home-section {
 	color: #fff;
-	background-color: #fff;
+/*	background-color: #fff; */
 	
 
 	}
@@ -150,14 +260,14 @@
 
 .events-title {
 	color: #333;
-	background-color:rgba(0, 51, 153, 0.2);
+/*	background-color:rgba(0, 51, 153, 0.2); */
 
 }
-	
+/*	
 .events-title:before, .events-title:after {	
 	background-color: rgba(0, 51, 153, 0.2);
 }
-	
+*/	
 .events-title h1 {
 	font-size: 75px;		
 }
@@ -198,8 +308,8 @@ footer {
   	bottom: 0;
 	left: 0;
 		
-	height: 90px;
-	line-height: 90px;
+	min-height: 90px;
+	line-height: 90px; 
 
 	background-color: #333;
 	text-align: center;
@@ -208,12 +318,17 @@ footer {
 	}
 
 .conference-footer img {
-	position: absolute;
+/*	position: absolute;
 	top:50%;
 	left: 50%;
 	margin-top: -24px;
-	margin-left: -84.5px;
-	
+	margin-left: -84.5px; */
+	max-width: 100%;
+/*   width: 100%;  */
+    height: auto;
+/*	max-width: 100%;
+	max-height: 100%; */
+	vertical-align: middle;
 	}	
 	
 .conference-footer:before, .conference-footer:after {

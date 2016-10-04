@@ -10,9 +10,12 @@ article {
 	}
 .slide {	
   position: absolute; 
+  left: 0;
+  top: 0;
+  min-width: 100%;
   padding: 30px 0 120px 0; 
   display: none;
-/*  background-color:#fff; */
+  background-color:#fff;
 /*  background-image: url(../images/slide_1.jpg);	 */
 
   background-repeat: no-repeat;
@@ -26,11 +29,11 @@ article {
 }
 
 .slide:before, .slide:after {
-	background-color: #fff;
+/*	background-color: #fff;  */
 	}			
 	
 .active {
 	display: block;	
-	position: relative;
+/*	position: relative; */
 	
 	}
