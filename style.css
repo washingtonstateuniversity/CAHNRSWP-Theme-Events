@@ -43,12 +43,32 @@
 		}
 	
 }
-@media screen and (max-width: 989px) {
 
+@media screen and (max-width: 989px) {
+/*
 	header {
-		max-height: 50%;
-        font-size: 91%;
+		max-height: 50vh;
+        font-size: 2vh;
 		}
+*/		
+	.top-bar {
+		display: none;	
+		}		
+		
+	.events-nav {
+	 display: none;	
+		}
+.header-logo {
+	margin-top: 30px;
+	}	
+	
+.mobile-title-bar { 
+	display: block;
+	background-color: #333;
+    height: 30px;   
+}		
+	
+/*		
 	header > .events-nav > .menu > ul {
 	     margin:0 0 0 2rem;
 		}
@@ -66,33 +86,22 @@
 	.top-bar #top-links {
 		display: none;
 	}	
-	
+*/	
 	.slide {
-		 padding: 0px 0 90px 0; 
+		 padding: 20px 0 120px 0; 
 		}
 		
-/*
-	.events-title, .events-title h1, .events-title h3 {
-		font-size: 91%;
-		padding: 0 10px;
-		}	
-*/	
-	
 }
 
 
 @media screen and (max-width: 700px) {
 
-.events-nav {
-	 display: none;	
-	}
-.top-bar {
-		display: none;	
-		
-		}	
+
+
 .header-logo {
 	margin-top: 30px;
 	}		
+/*
 .mobile-title-bar { 
 	display: block;
 	background-color: #333;
@@ -112,26 +121,26 @@
 	color: #fff;
 	text-transform:	uppercase;
 }
-
-.events-title h1 { 
-	font-size: 50%;
-}
+*/
 
 .slide {
-    padding: 0px 0 45px 0; 
+    padding: 5px 0 50px 0; 
 		}
 		
 .conference-footer {
-	max-height: 45px;
-	line-height: 45px;
+	height: 10vw;
+	line-height: 10vw;
 	
 	
 	}
 .conference-footer img {
 
-	width: 127.75px; 
-	
+	width: 22vw; 
+	vertical-align: middle; 
 
+	}
+	p {
+		font-size: 2.3vw;
 	}
 
 } /* end 700px and smaller
@@ -189,7 +198,8 @@
 .header-logo {
 	background-color: #000;
 	position: relative; 
-	min-height: 128px; 
+	height: 17.5vh;
+	line-height: 17.5vh; 
 	
 	}
 .header-logo img { /* use as wordpress setting - may need to change*/
@@ -197,6 +207,7 @@
     margin: 0 auto;
 	width: auto;
 	min-height: 100%; 
+	vertical-align: middle;
 	}	
 
 .header-logo:before, .header-logo:after {
@@ -269,27 +280,27 @@
 }
 */	
 .events-title h1 {
-	font-size: 75px;		
+	font-size: 5vw;		
 }
 
 .events-title h3 {
-	font-size: 38px;	
+	font-size: 2.75vw;	
 	}
 
 .events-title a {
-		color: #fff;
+		color: #333;
 }
 	
 .rsvp {
 	background-color: #999;
     border: none;
     color: white;
-    padding: 15px 82px;
+    padding: 1vw 5vw;
 	border-radius: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 2.2vw;
 	}
 	
 
@@ -337,7 +348,7 @@ footer {
 	
 	
 	
-.conference-footer a, .rsvp a, .events-title a {
+.conference-footer a, .rsvp a {
 	color: #fff;
 	text-transform: uppercase;
 	

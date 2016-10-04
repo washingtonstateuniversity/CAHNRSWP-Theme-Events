@@ -29,7 +29,7 @@ article {
 }
 
 .slide:before, .slide:after {
-/*	background-color: #fff;  */
+	background-color: #fff;  
 	}			
 	
 .active {
