@@ -28,13 +28,7 @@ function cahnrs_events_customize_register( $wp_customize ) {
 		'capability' => 'edit_theme_options',
 		'type'       => 'option'
 	));
-/*	
-Gray - background:#5e6a71}
-Green - background: #8f7e35;
-Orange - background:#b67233}
-Blue - background:#4f868e
-Yellow - background:#c69214
-*/	
+
 		$wp_customize->add_control('cahnrs_events_bg_color', array(
 		'settings'   => 'spine_options[cahnrs_events_bg_color]',
 		'label'      => __('Primary Color', 'spine'),
@@ -164,11 +158,11 @@ Yellow - background:#c69214
 		'section'    => 'cahnrs_events_banner',
 		'type'       => 'select',
 		'choices'    => array(
-			'gray'   => 'Gray',
-			'green'  => 'Green',
-			'orange' => 'Orange',
-			'blue'   => 'Blue',
-			'yellow' => 'Yellow',
+			'#5e6a71' => 'Gray',
+			'#8f7e35' => 'Green',
+			'#b67233' => 'Orange',
+			'#4f868e' => 'Blue',
+			'#c69214' => 'Yellow',
 		),
 	));
 	//Home settings
@@ -207,11 +201,11 @@ Yellow - background:#c69214
 		'section'    => 'cahnrs_events_home',
 		'type'       => 'select',
 		'choices'    => array(
-			'gray'   => 'Gray',
-			'green'  => 'Green',
-			'orange' => 'Orange',
-			'blue'   => 'Blue',
-			'yellow' => 'Yellow',
+			'#5e6a71' => 'Gray',
+			'#8f7e35' => 'Green',
+			'#b67233' => 'Orange',
+			'#4f868e' => 'Blue',
+			'#c69214' => 'Yellow',
 		),
 	));
 	
@@ -227,11 +221,11 @@ Yellow - background:#c69214
 		'section'    => 'cahnrs_events_home',
 		'type'       => 'select',
 		'choices'    => array(
-			'gray'   => 'Gray',
-			'green'  => 'Green',
-			'orange' => 'Orange',
-			'blue'   => 'Blue',
-			'yellow' => 'Yellow',
+			'#5e6a71' => 'Gray',
+			'#8f7e35' => 'Green',
+			'#b67233' => 'Orange',
+			'#4f868e' => 'Blue',
+			'#c69214' => 'Yellow',
 		),
 	));
 	
@@ -267,11 +261,11 @@ Yellow - background:#c69214
 		'section'    => 'cahnrs_events_home',
 		'type'       => 'select',
 		'choices'    => array(
-			'gray'   => 'Gray',
-			'green'  => 'Green',
-			'orange' => 'Orange',
-			'blue'   => 'Blue',
-			'yellow' => 'Yellow',
+			'#5e6a71' => 'Gray',
+			'#8f7e35' => 'Green',
+			'#b67233' => 'Orange',
+			'#4f868e' => 'Blue',
+			'#c69214' => 'Yellow',
 		),
 	));
 	   

@@ -1,6 +1,8 @@
 <header>
+
 <style>
 :root {
+/*  https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables */
 /*	--main-bg-color: #5e6a71; */
 	--main-bg-color:  <?php echo ( spine_get_option( 'cahnrs_events_bg_color' ) ) ? ' ' . esc_attr( spine_get_option( 'cahnrs_events_bg_color' ) ) : '#5e6a71;'; ?>; 
 	--secondary-color: <?php echo ( spine_get_option( 'cahnrs_events_secondary_color' ) ) ? ' ' . esc_attr( spine_get_option( 'cahnrs_events_secondary_color' ) ) : '#000;'; ?>; 
@@ -19,17 +21,21 @@
     <div class="header-logo events-bleed">
     	<a href="#">
          <?php 
-	   	  if ( spine_get_option( 'cahnrs_events_banner_text' ) !== "" ) {
-	   			 echo "<h2>" . spine_get_option( 'cahnrs_events_banner_text' ) ."<h2>";
-	   		}
-			elseif ( spine_get_option( 'cahnrs_events_banner_image' ) !== "" ) { 
+		 	if ( spine_get_option( 'cahnrs_events_banner_image' ) !== "" ) { 
         
             echo '<img src="'. spine_get_option( 'cahnrs_events_banner_image')  .'"/>';
+		
+		 	}
+	   		 elseif ( spine_get_option( 'cahnrs_events_banner_text' ) !== "" ) {
+				 echo '<div class="banner-text">';
+	   			 echo spine_get_option( 'cahnrs_events_banner_text' );
+				 echo '</div>';
+	   		}
+			else {
+				echo '<div class="banner-text">Nothing';
+				 echo '</div>';
+				}
 			
-		 } else {
-        	
-			 echo '<img src="'. get_stylesheet_directory_uri() .'/images/events-logo.jpg"/>';
-		 }
 		  ?>
         
         </a>

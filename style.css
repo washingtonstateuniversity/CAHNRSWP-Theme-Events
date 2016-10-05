@@ -83,7 +83,7 @@ Yellow - 50% - background:rgba(198,146,20,.5)}
 	
 	.slide {
 		 padding: 20px 0 120px 0; 
-		}
+	}
 		
 }
 
@@ -175,9 +175,8 @@ p {
 /*	background-color: #000; */
 	background-color: var(--secondary-color);
 	position: relative; 
-	max-height: 128px;
+	height: 128px;
 	line-height: 128px; 
-	
 	}
 .header-logo img { /* use as wordpress setting - may need to change*/
 
@@ -185,6 +184,7 @@ p {
 	width: auto;
 	/* min-height: 100%; */
 	vertical-align: middle;
+	
 	}	
 
 .header-logo:before, .header-logo:after {
@@ -192,9 +192,12 @@ p {
 	background-color: var(--secondary-color);
 	}
 	
-.banner_text {
-	color: var(--banner-text-color);
+.banner-text {
+	color: var(--banner-text-color);	
+	font-size: 4vw;
+
 	}
+
 
 .events-nav	{
 /*	background-color: #333; */
@@ -324,19 +327,19 @@ footer {
 
 }
 	
-	
-	
 .conference-footer a, .rsvp a {
 	color: var(--active-link-color);
 	text-transform: uppercase;
 	
 	}	
+
+/* not needed - created variables based on the 
 	
 .gray {
 	--main-bg-color: #5e6a71;
 	}
 .green {
-/*	background-color:#8f7e35; */
+
 	--main-bg-color: #8f7e35;
 	}	
 .orange {
@@ -351,3 +354,4 @@ footer {
 .crimson {
 	--main-bg-color: #981e32;
 	}
+*/	
