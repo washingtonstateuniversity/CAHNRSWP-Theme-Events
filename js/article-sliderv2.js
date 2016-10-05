@@ -116,6 +116,8 @@ function do_slide( active_slide, next_slide, direction ){
 	if (direction === 1) {
 
 	var	active_end_position = winwidth + "px";
+	var calc_spacer_end = hswidth + start_offset;
+	var slide_spacer_end_position = calc_spacer_end + "px";
 	var	next_start_position = "-" + start_position;
 //		next_slide.css({"left":"-100%"});
 		
@@ -126,6 +128,8 @@ function do_slide( active_slide, next_slide, direction ){
 		    active_slide.removeAttr( 'style' );
 			active_slide.removeClass('active');	
 			});
+			
+	//	jQuery('.slide-spacer').animate({"left":slide_spacer_end_position}, 4000);
 
 		next_slide.addClass('active');				
 

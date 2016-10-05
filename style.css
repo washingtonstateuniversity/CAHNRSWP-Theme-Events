@@ -22,10 +22,11 @@ blue - 50% background:rgba(79,134,142,.5)}
 Yellow - 50% - background:rgba(198,146,20,.5)}
 
 */
+/*
 :root {
 	--main-bg-color: #5e6a71;
 }
-
+*/
 .events-bleed:before, .events-bleed:after {
 	content: '';
 /*background-color: #999;*/
@@ -40,7 +41,6 @@ Yellow - 50% - background:rgba(198,146,20,.5)}
 .events-bleed:after {
 	left: 100%;
 	right: auto;	
-
 	}	
 	
 /******* responsize elements **************/
@@ -56,19 +56,12 @@ Yellow - 50% - background:rgba(198,146,20,.5)}
 	max-width: 1188px;    
     background: #fff;
 	display: block;
-	header {
-		
-		}
+	
 	
 }
 
 @media screen and (max-width: 989px) {
-/*
-	header {
-		max-height: 50vh;
-        font-size: 2vh;
-		}
-*/		
+
 	.top-bar {
 		display: none;	
 		}		
@@ -154,7 +147,8 @@ p {
     height: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
-	color: #fff;
+/*	color: #fff;  */
+	color: var(--active-link-color); 
 	font-size: 12px;
 	}		
 
@@ -174,18 +168,19 @@ p {
 	}	
 #top-links a {
 	padding: 0 5px;
-	color: #fff;
+	color: var(--active-link-color);
 	}
 
 .header-logo {
-	background-color: #000;
+/*	background-color: #000; */
+	background-color: var(--secondary-color);
 	position: relative; 
 	max-height: 128px;
 	line-height: 128px; 
 	
 	}
 .header-logo img { /* use as wordpress setting - may need to change*/
-/*	display: inline-block; */
+
     margin: 0 auto;
 	width: auto;
 	/* min-height: 100%; */
@@ -193,7 +188,12 @@ p {
 	}	
 
 .header-logo:before, .header-logo:after {
-	background-color: #000;
+/*	background-color: #000; */
+	background-color: var(--secondary-color);
+	}
+	
+.banner_text {
+	color: var(--banner-text-color);
 	}
 
 .events-nav	{
@@ -201,12 +201,13 @@ p {
 	background-color: var(--main-bg-color);
     height: 40px;
 	position: relative;
+	margin-left: 2rem;
 
 	}
 
 .events-nav:before, .events-nav:after {
 /*	background-color: #333; */
-background-color: var(--main-bg-color);
+	background-color: var(--main-bg-color);
 	}			
 
 .events-nav a {
@@ -214,7 +215,7 @@ background-color: var(--main-bg-color);
     height: 40px;
 	line-height: 40px;
 	text-transform: uppercase;	
-	color: #fff;
+	color: var(--active-link-color);
 	display: block;
 	}
 	
@@ -244,8 +245,6 @@ background-color: var(--main-bg-color);
 .home-section {
 	color: #fff;
 /*	background-color: #fff; */
-	
-
 	}
 
 .events-frontpage-content {
@@ -268,7 +267,8 @@ background-color: var(--main-bg-color);
 	}
 
 .events-title a {
-		color: #333;
+	/*	color: #333; */
+		color: var(--active-link-color);
 }
 	
 .rsvp {
@@ -302,8 +302,8 @@ footer {
 	min-height: 90px;
 	line-height: 90px; 
 
-/*	background-color: #333; */
-	background-color: var(--main-bg-color);
+/*	background-color: #5e6a71; */
+	background-color:var(--tertiary-color);	
 	text-align: center;
 	color: #fff;
 	 z-index: 2;
@@ -311,28 +311,23 @@ footer {
 	}
 
 .conference-footer img {
-/*	position: absolute;
-	top:50%;
-	left: 50%;
-	margin-top: -24px;
-	margin-left: -84.5px; */
+
 	max-width: 100%;
 /*   width: 100%;  */
     height: auto;
-/*	max-width: 100%;
-	max-height: 100%; */
 	vertical-align: middle;
 	}	
 	
 .conference-footer:before, .conference-footer:after {
-/*	background-color: #333;	 */
-	background-color: var(--main-bg-color);
+/*	background-color: #5e6a71;	  */
+	background-color:var(--tertiary-color);
+
 }
 	
 	
 	
 .conference-footer a, .rsvp a {
-	color: #fff;
+	color: var(--active-link-color);
 	text-transform: uppercase;
 	
 	}	
@@ -353,3 +348,6 @@ footer {
 .yellow {
 	--main-bg-color: #c69214;
 	}	
+.crimson {
+	--main-bg-color: #981e32;
+	}
