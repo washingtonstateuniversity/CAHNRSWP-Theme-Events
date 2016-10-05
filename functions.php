@@ -1,5 +1,9 @@
 <?php
 
+  
+   require get_stylesheet_directory() . '/inc/customizer.php';
+
+
 if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
 
 function my_jquery_enqueue() {
@@ -49,3 +53,4 @@ function add_classes_on_li($classes, $item, $args) {
 add_filter('nav_menu_css_class','add_classes_on_li',1,3);
 
 */
+

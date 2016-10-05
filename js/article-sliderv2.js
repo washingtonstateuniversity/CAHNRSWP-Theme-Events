@@ -1,3 +1,43 @@
+//	jQuery('.slide').trigger().resize();
+
+
+jQuery(window).resize(function() {
+
+	var winwidth = jQuery( window ).width();			
+	var hswidth = jQuery('.home-section').width();
+	
+
+	var ws = windowoffset(winwidth, hswidth );		
+	
+	var offset = (0.5 * ws);
+	var start_position = '';
+		
+	var start_position_num = offset + hswidth;
+
+	var newslidewidth = offset + "px";
+	var endoffset = "-" + offset + "px";
+	
+//	console.log(endoffset);
+	
+	//alert(newslidewidth);
+	
+   //jQuery('.slide_bleed').addClass('change').attr('new-width',offset);	
+   //	jQuery(".slide_bleed::before").css('width',offset);	
+   //	jQuery(".slide_bleed:before").addRule({width: newslidewidth});	
+   //	jQuery(".slide").width(winwidth);
+
+	jQuery(".slide-spacer").width(offset);
+	jQuery(".slide-end").width(offset).css({"right":endoffset});
+	
+//	next_slide.css({"left":next_start_position});
+			
+
+
+
+});
+
+
+
 
 jQuery('.menu > ul > li > a').on('click', function (event) {
 		event.preventDefault();
@@ -111,12 +151,10 @@ function do_slide( active_slide, next_slide, direction ){
 			});
 		
 		next_slide.addClass('active'); 						
-
 //		next_slide.css({"left":"100%"});
 		next_slide.css({"left":next_start_position});
 		
-		next_slide.animate({"left":"0"}, 4000, function() {
-			
+		next_slide.animate({"left":"0"}, 4000, function() {			
 				next_slide.css({"position":"relative"});
 				do_update_slug( next_slide );
 				jQuery( document.body).scrollTop( 0 );

@@ -1,5 +1,4 @@
 <section class="home-section">
- 
  <div class="events-frontpage-content">
 	<div class="slide-wrapper">
 	<?php 

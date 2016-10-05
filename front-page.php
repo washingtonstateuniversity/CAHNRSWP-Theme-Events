@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="page-wrap">
+<div class="events-page-wrap">
 <?php
 	
 	get_template_part( 'parts/header', 'events' ); 

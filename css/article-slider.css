@@ -23,15 +23,43 @@ article {
   background-size: cover; 
   
   color: #333;
+  z-index: 1;
 /*  margin-top: 20px; */ 
 /*  padding-bottom: 90px; */
 
 }
+.slide-spacer {
+    height: 100%;
+	background-color:#fff;
+    position: absolute;
+	top: 0;
+	right: 100%;
+	display: block;
+	}
+	
+.slide-end {
+    height: 100%;
+	background-color:#fff;
+    position: absolute;
+	top: 0;
+	display: block;
+	}
 
 .slide:before, .slide:after {
-	background-color: #fff;  
-	}			
-	
+/*	background-color: #fff;  */
+	}
+/*
+.slide-bleed:before {
+	content: '';
+	background-color:#fff;
+	position: absolute;
+	top: 0;
+	right: 100%;
+	height: 100%;
+	min-width: 100%;
+	display: block;
+	}	
+*/
 .active {
 	display: block;	
 /*	position: relative; */

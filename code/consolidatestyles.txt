@@ -1,0 +1,6 @@
+.top-bar.gray, .top-bar.gray:before, .top-bar.gray:after, .header-logo, .header-logo:before, .header-logo:after, .events-nav, .events-nav:before, .events-nav:after, .mobile-title-bar, .conference-footer, .conference-footer:before, .conference-footer:after {
+background-color:#5e6a71
+}
+
+.top-bar.green, .top-bar.green:before, .top-bar.green:after, .header-logo.green, .header-logo.green:before, .header-logo.green:after, .events-nav:green, .events-nav:before, .events-nav:after, .mobile-title-bar.green, .conference-footer.green, .conference-footer:before, .conference-footer:after {
+background-color:#8f7e35}

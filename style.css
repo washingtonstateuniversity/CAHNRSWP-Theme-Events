@@ -8,6 +8,23 @@
  Version:      0.0.1
 
 */
+/*
+Gray - background:#5e6a71}
+Green - background: #8f7e35;
+Orange - background:#b67233}
+Blue - background:#4f868e
+Yellow - background:#c69214
+
+Gray - 50% background:rgba(94,106,113,.5)}
+Green - 50% background:rgba(143,126,53,.5)}
+Orange - 50% background:rgba(182,114,51,.5)}
+blue - 50% background:rgba(79,134,142,.5)}
+Yellow - 50% - background:rgba(198,146,20,.5)}
+
+*/
+:root {
+	--main-bg-color: #5e6a71;
+}
 
 .events-bleed:before, .events-bleed:after {
 	content: '';
@@ -29,7 +46,8 @@
 /******* responsize elements **************/
 .mobile-title-bar {
 	max-height: 30px;
-	background-color: #666;
+/*	background-color: #666; */
+	background-color: var(--main-bg-color);
 	position:relative;
 	display:none;
 	}
@@ -64,29 +82,12 @@
 	
 .mobile-title-bar { 
 	display: block;
-	background-color: #333;
+/*	background-color: #333; */
+	background-color: var(--main-bg-color);
+	
     height: 30px;   
 }		
 	
-/*		
-	header > .events-nav > .menu > ul {
-	     margin:0 0 0 2rem;
-		}
-	
-	.top-bar {
-		margin-top: 49px;
-		
-		
-		}	
-	.top-bar #org-title {
-		display: absolute;
-		left: 2rem;
-		}
-			
-	.top-bar #top-links {
-		display: none;
-	}	
-*/	
 	.slide {
 		 padding: 20px 0 120px 0; 
 		}
@@ -101,27 +102,6 @@
 .header-logo {
 	margin-top: 30px;
 	}		
-/*
-.mobile-title-bar { 
-	display: block;
-	background-color: #333;
-    height: 30px;
-    
-}		
-
-.mobile-title-bar #org-title {
-	line-height: 30px;
-	margin: 0 auto;
-	left: 0;
-	position: relative;
-	
-		
-		}
-.mobile-title-bar #org-title a {		
-	color: #fff;
-	text-transform:	uppercase;
-}
-*/
 
 .slide {
     padding: 5px 0 50px 0; 
@@ -137,9 +117,9 @@
 
 	width: 22vw; 
 	vertical-align: middle; 
-
 	}
-	p {
+
+p {
 		font-size: 2.3vw;
 	}
 
@@ -159,13 +139,15 @@
 	}
 
 .top-bar {
-	background-color: #333;
+/*	background-color: #333; */
+	background-color: var(--main-bg-color);
     height: 30px;
 	position: relative;
 	}
 
 .top-bar:before, .top-bar:after {
-	background-color: #333;
+/*	background-color: #333; */
+	background-color: var(--main-bg-color);
 	}	
 	
 .top-bar a {
@@ -198,15 +180,15 @@
 .header-logo {
 	background-color: #000;
 	position: relative; 
-	height: 17.5vh;
-	line-height: 17.5vh; 
+	max-height: 128px;
+	line-height: 128px; 
 	
 	}
 .header-logo img { /* use as wordpress setting - may need to change*/
 /*	display: inline-block; */
     margin: 0 auto;
 	width: auto;
-	min-height: 100%; 
+	/* min-height: 100%; */
 	vertical-align: middle;
 	}	
 
@@ -215,14 +197,16 @@
 	}
 
 .events-nav	{
-	background-color: #333;
+/*	background-color: #333; */
+	background-color: var(--main-bg-color);
     height: 40px;
 	position: relative;
 
 	}
 
 .events-nav:before, .events-nav:after {
-	background-color: #333;
+/*	background-color: #333; */
+background-color: var(--main-bg-color);
 	}			
 
 .events-nav a {
@@ -274,11 +258,7 @@
 /*	background-color:rgba(0, 51, 153, 0.2); */
 
 }
-/*	
-.events-title:before, .events-title:after {	
-	background-color: rgba(0, 51, 153, 0.2);
-}
-*/	
+
 .events-title h1 {
 	font-size: 5vw;		
 }
@@ -295,7 +275,7 @@
 	background-color: #999;
     border: none;
     color: white;
-    padding: 1vw 5vw;
+    padding: .5vw 2vw;
 	border-radius: 10px;
     text-align: center;
     text-decoration: none;
@@ -304,7 +284,7 @@
 	}
 	
 
-.page-wrap {
+.events-page-wrap {
 	min-height: 100vh;
 	position: relative;
 	}
@@ -322,9 +302,11 @@ footer {
 	min-height: 90px;
 	line-height: 90px; 
 
-	background-color: #333;
+/*	background-color: #333; */
+	background-color: var(--main-bg-color);
 	text-align: center;
 	color: #fff;
+	 z-index: 2;
 	
 	}
 
@@ -343,7 +325,8 @@ footer {
 	}	
 	
 .conference-footer:before, .conference-footer:after {
-	background-color: #333;	
+/*	background-color: #333;	 */
+	background-color: var(--main-bg-color);
 }
 	
 	
@@ -352,4 +335,21 @@ footer {
 	color: #fff;
 	text-transform: uppercase;
 	
+	}	
+	
+.gray {
+	--main-bg-color: #5e6a71;
+	}
+.green {
+/*	background-color:#8f7e35; */
+	--main-bg-color: #8f7e35;
+	}	
+.orange {
+	--main-bg-color: #b67233;
+	}	
+.blue {
+	--main-bg-color: #4f868e;
+	}	
+.yellow {
+	--main-bg-color: #c69214;
 	}	

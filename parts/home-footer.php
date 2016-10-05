@@ -1,4 +1,4 @@
-<footer class="conference-footer events-bleed">
+<footer class="conference-footer <?php echo ( spine_get_option( 'cahnrs_events_header_bg_color' ) ) ? ' ' . esc_attr( spine_get_option( 'cahnrs_events_header_bg_color' ) ) : ' gray'; ?> events-bleed">
 	<?php // echo strip_tags(wp_nav_menu( array( 'menu' => 'conference-menu', 'echo' => false, 'after' => ' | ' ) ), '<a>' ); 
 	
 	$defaults = array(
